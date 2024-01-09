@@ -10,6 +10,7 @@ class customizeAcessRecord(admin.ModelAdmin):
     list_filter=['email']
     search_fields=['author']
     list_select_related=['name']
+    list_per_page=1
 
 class customizeWebpage(admin.ModelAdmin):
     list_display=['topic_name','url','name']
